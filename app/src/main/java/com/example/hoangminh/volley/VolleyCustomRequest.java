@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * * This is a Volley custom request with a Map String for authentication
  */
-public class MyJsonRequest extends Request<JSONObject> {
+public class VolleyCustomRequest extends Request<JSONObject> {
 
     private Response.Listener<JSONObject> mListener;
     private Map<String, String> mParams;
@@ -30,7 +30,7 @@ public class MyJsonRequest extends Request<JSONObject> {
      * ErrorListener can be null if you want to ignore error
      */
 
-    public MyJsonRequest(int method, String url, Map<String, String> params, Response.Listener<JSONObject> responseListener, Response.ErrorListener errorListener) {
+    public VolleyCustomRequest(int method, String url, Map<String, String> params, Response.Listener<JSONObject> responseListener, Response.ErrorListener errorListener) {
         super(method, url, errorListener);
 
         this.mListener = responseListener;

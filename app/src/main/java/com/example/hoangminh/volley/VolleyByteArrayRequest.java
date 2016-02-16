@@ -8,12 +8,12 @@ import com.android.volley.toolbox.HttpHeaderParser;
 
 import java.util.Map;
 
-public class ByteArrayRequest extends Request<byte[]> {
+public class VolleyByteArrayRequest extends Request<byte[]> {
 
     private Response.Listener<byte[]> mListener;
     private Map<String, String> mParams;
 
-    public ByteArrayRequest(int method, String url, Map<String, String> params, Response.Listener<byte[]> responseListener, Response.ErrorListener errorListener) {
+    public VolleyByteArrayRequest(int method, String url, Map<String, String> params, Response.Listener<byte[]> responseListener, Response.ErrorListener errorListener) {
         super(method, url, errorListener);
 
         mListener = responseListener;

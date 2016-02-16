@@ -16,14 +16,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class ObjectRequest<T> extends Request<T> {
+public class VolleyObjectRequest<T> extends Request<T> {
 
     private final Gson gson = new Gson();
     private final Class<T> mResult;
     private final Map<String, String> mParams;
     private final Response.Listener<T> mListener;
 
-    public ObjectRequest(String url, Class<T> result, Map<String, String> params, Response.Listener<T> listener, Response.ErrorListener errorListener) {
+    public VolleyObjectRequest(String url, Class<T> result, Map<String, String> params, Response.Listener<T> listener, Response.ErrorListener errorListener) {
         super(Method.GET, url, errorListener);
 
         this.mResult = result;

@@ -62,7 +62,7 @@ public class DummyClass {
         headers.put("USERNAME", "solominh");
         headers.put("PASSWORD", "123456");
 
-        MyJsonRequest request = new MyJsonRequest(Request.Method.GET, url, headers,
+        VolleyCustomRequest request = new VolleyCustomRequest(Request.Method.GET, url, headers,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
@@ -82,7 +82,7 @@ public class DummyClass {
         headers.put("USERNAME", "solominh");
         headers.put("PASSWORD", "123456");
 
-        ObjectRequest<DummyObject> request = new ObjectRequest<>(url, DummyObject.class, headers,
+        VolleyObjectRequest<DummyObject> request = new VolleyObjectRequest<>(url, DummyObject.class, headers,
                 new Response.Listener<DummyObject>() {
                     @Override
                     public void onResponse(DummyObject response) {
@@ -98,7 +98,7 @@ public class DummyClass {
     }
 
     private void test4() {
-        ByteArrayRequest request = new ByteArrayRequest(Request.Method.GET, url, null,
+        VolleyByteArrayRequest request = new VolleyByteArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<byte[]>() {
                     @Override
                     public void onResponse(byte[] response) {
