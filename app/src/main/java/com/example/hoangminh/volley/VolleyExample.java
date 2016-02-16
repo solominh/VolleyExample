@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * Created by hoangminh on 2/16/16.
  */
-public class DummyClass {
+public class VolleyExample {
 
     public final static String url = "https://www.google.com/";
 

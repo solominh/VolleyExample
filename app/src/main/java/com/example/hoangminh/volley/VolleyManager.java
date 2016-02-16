@@ -31,7 +31,7 @@ public class VolleyManager {
 
     private RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
-            Context context = App.getAppContext();
+            Context context = AppUtils.getAppContext();
             mRequestQueue = Volley.newRequestQueue(context);
         }
         return mRequestQueue;

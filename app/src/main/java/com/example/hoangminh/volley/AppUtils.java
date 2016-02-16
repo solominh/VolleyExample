@@ -6,7 +6,7 @@ import android.content.Context;
 /**
  * Created by hoangminh on 9/11/15.
  */
-public class App extends Application {
+public class AppUtils extends Application {
     private static Context appContext;
 
     public static Context getAppContext() {
